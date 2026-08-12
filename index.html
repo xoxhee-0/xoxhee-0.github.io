@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>무료 온라인 계산기 모음 · 핏툴 | xoxhee 도구함</title>
-<meta name="description" content="만 나이, 연봉 실수령액, 대출이자, 평수 변환, 디데이부터 TDEE·단백질·1RM·체지방률·BMI까지 — 네이버에 없는 전문 계산기 12종을 100% 무료로. 설치·로그인 없이 바로 사용하세요.">
-<meta name="keywords" content="무료 계산기, 만 나이 계산기, 연봉 실수령액 계산기, 대출이자 계산기, 평수 계산기, 디데이 계산기, TDEE 계산기, 단백질 계산기, 1RM 계산기, 체지방률 계산기, BMI 계산기">
+<title>xoxhee 도구함 — 무료 계산기 16종과 금융 생활 가이드</title>
+<meta name="description" content="연봉 실수령액·전세대출 한도·대출이자·종합소득세·퇴직금부터 TDEE·단백질·체지방률까지 무료 계산기 16종. 각 계산의 공식과 기준을 정리한 금융 생활 글도 함께 제공합니다. 설치·로그인 없이 모바일에서 바로.">
+<meta name="keywords" content="무료 계산기, 연봉 실수령액 계산기, 전세자금대출 한도, 대출이자 계산기, 종합소득세 계산기, 퇴직금 계산기, 예적금 이자 계산기, 평수 계산기, 만 나이 계산기, TDEE 계산기, 체지방률 계산기, BMI 계산기">
 <link rel="canonical" href="https://xoxhee-0.github.io/">
 
 <!-- 검색엔진 소유확인 -->
@@ -13,8 +13,8 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="무료 온라인 계산기 모음 · 핏툴">
-<meta property="og:description" content="생활·금융·운동·다이어트 계산기 12종을 100% 무료로. 설치 없이 모바일에서 바로.">
+<meta property="og:title" content="xoxhee 도구함 — 무료 계산기 16종과 금융 생활 가이드">
+<meta property="og:description" content="연봉 실수령액·전세대출·종합소득세·퇴직금 등 무료 계산기 16종과, 각 계산의 공식·기준을 정리한 해설 글.">
 <meta property="og:url" content="https://xoxhee-0.github.io/">
 <meta property="og:site_name" content="xoxhee 도구함">
 <meta name="twitter:card" content="summary">
@@ -29,80 +29,164 @@
   "@type": "WebSite",
   "name": "xoxhee 도구함",
   "url": "https://xoxhee-0.github.io/",
-  "description": "무료 온라인 계산기 12종 모음 (생활·금융·운동·다이어트)"
+  "description": "무료 온라인 계산기 16종과 금융·생활 해설 글 모음",
+  "inLanguage": "ko"
 }
 </script>
 
 <style>
   :root { --bg:#0f1115; --card:#171a21; --line:#262b36; --txt:#e8eaed; --sub:#9aa0aa; --accent:#4da3ff; }
   * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif; line-height:1.6; }
-  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  body { margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif; line-height:1.7; }
+  .wrap { max-width:820px; margin:0 auto; padding:32px 20px 64px; }
   header { text-align:center; margin-bottom:8px; }
   h1 { color:var(--accent); font-size:1.9rem; margin:0 0 6px; }
-  .lead { color:var(--sub); margin:0 0 28px; text-align:center; }
-  h2 { font-size:1.2rem; margin:36px 0 12px; border-left:4px solid var(--accent); padding-left:10px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; }
+  .lead { color:var(--sub); margin:0 0 24px; text-align:center; }
+  h2 { font-size:1.25rem; margin:40px 0 10px; border-left:4px solid var(--accent); padding-left:10px; }
+  h3 { font-size:1.02rem; margin:22px 0 4px; color:var(--txt); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:10px; margin-top:12px; }
   a.tool { display:block; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; color:var(--txt); text-decoration:none; transition:border-color .15s; }
   a.tool:hover { border-color:var(--accent); }
   a.tool b { display:block; font-size:1rem; }
   a.tool span { color:var(--sub); font-size:.82rem; }
-  .cta { display:block; text-align:center; background:var(--accent); color:#06121f; font-weight:700; padding:16px; border-radius:12px; text-decoration:none; margin:28px 0; }
+  .cta { display:block; text-align:center; background:var(--accent); color:#06121f; font-weight:700; padding:16px; border-radius:12px; text-decoration:none; margin:24px 0; }
   p { color:#cfd3da; }
-  .faq dt { font-weight:700; margin-top:16px; }
+  .note { color:var(--sub); font-size:.9rem; }
+  article.post { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  article.post h3 { margin:0 0 6px; }
+  article.post h3 a { color:var(--accent); text-decoration:none; }
+  article.post h3 a:hover { text-decoration:underline; }
+  article.post p { margin:0; color:var(--sub); font-size:.92rem; }
+  .faq dt { font-weight:700; margin-top:18px; }
   .faq dd { margin:4px 0 0; color:var(--sub); }
-  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:.82rem; text-align:center; }
+  footer { margin-top:52px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:.82rem; text-align:center; }
+  footer a { color:var(--accent); }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>xoxhee 도구함</h1>
-    <p class="lead">네이버에 없는 전문 계산기 12종 · 설치·로그인 없이 100% 무료</p>
+    <p class="lead">무료 계산기 16종 · 설치와 로그인 없이 모바일에서 바로</p>
   </header>
 
-  <a class="cta" href="/fit-tools/">▶ 계산기 12종 전체 사용하기</a>
+  <p>연봉에서 4대보험과 세금이 얼마나 빠지는지, 전세자금대출이 보증금 대비 얼마까지 나오는지,
+  프리랜서가 5월에 세금을 더 내는지 돌려받는지 — 살면서 한 번씩 급하게 찾게 되는 계산들이 있습니다.
+  대부분은 공식 자체가 어렵지 않은데, 기준이 흩어져 있어서 확인하는 데 시간이 걸립니다.</p>
 
-  <h2>생활·금융 계산기</h2>
+  <p>이 사이트는 그런 계산 <strong>16가지</strong>를 한 페이지에 모아 두고,
+  각 계산이 <strong>어떤 공식과 기준으로 나온 값인지</strong>를 함께 설명합니다.
+  숫자만 던지지 않고 근거를 같이 보여주는 것이 목적입니다.
+  회원가입도, 앱 설치도, 결제도 없습니다.</p>
+
+  <a class="cta" href="/fit-tools/">▶ 계산기 16종 전체 사용하기</a>
+
+  <h2>금융·생활 계산기 (9종)</h2>
+  <p class="note">급여·대출·세금처럼 금액이 크고 기준이 자주 헷갈리는 항목들입니다.
+  각 계산기에는 적용한 공식과 추정 범위를 함께 표시합니다.</p>
   <div class="grid">
-    <a class="tool" href="/fit-tools/#age"><b>만 나이</b><span>생년월일로 만 나이</span></a>
-    <a class="tool" href="/fit-tools/#salary"><b>연봉 실수령액</b><span>4대보험·세금 공제 후</span></a>
-    <a class="tool" href="/fit-tools/#loan"><b>대출이자</b><span>원리금·월 상환액</span></a>
-    <a class="tool" href="/fit-tools/#area"><b>평수 ↔ ㎡</b><span>면적 단위 변환</span></a>
-    <a class="tool" href="/fit-tools/#dday"><b>디데이</b><span>남은/지난 날짜</span></a>
+    <a class="tool" href="/fit-tools/#salary"><b>연봉 실수령액</b><span>4대보험·소득세 공제 후 월 실수령</span></a>
+    <a class="tool" href="/fit-tools/#jeonse"><b>전세자금대출 한도</b><span>일반 / 버팀목 비교</span></a>
+    <a class="tool" href="/fit-tools/#loan"><b>대출이자</b><span>원리금균등·원금균등 상환액</span></a>
+    <a class="tool" href="/fit-tools/#incometax"><b>종합소득세</b><span>프리랜서·유튜버 3.3% 정산</span></a>
+    <a class="tool" href="/fit-tools/#retire"><b>퇴직금</b><span>평균임금 × 30일 × 재직일수</span></a>
+    <a class="tool" href="/fit-tools/#saving"><b>예·적금 이자</b><span>세후 실수령 이자</span></a>
+    <a class="tool" href="/fit-tools/#area"><b>평수 ↔ ㎡</b><span>전용·공급면적 환산</span></a>
+    <a class="tool" href="/fit-tools/#age"><b>만 나이</b><span>생년월일 기준 만 나이</span></a>
+    <a class="tool" href="/fit-tools/#dday"><b>디데이</b><span>남은 날짜 / 지난 날짜</span></a>
   </div>
 
-  <h2>운동·다이어트 계산기</h2>
+  <h2>건강·운동 계산기 (7종)</h2>
+  <p class="note">체중 관리와 운동 계획에 쓰이는 계산들입니다.
+  BMI는 아시아 기준, 체지방률은 미해군 둘레법 등 적용 기준을 명시했습니다.</p>
   <div class="grid">
-    <a class="tool" href="/fit-tools/#tdee"><b>TDEE</b><span>하루 소비 칼로리</span></a>
-    <a class="tool" href="/fit-tools/#protein"><b>단백질 권장량</b><span>체중·목표별</span></a>
-    <a class="tool" href="/fit-tools/#orm"><b>1RM</b><span>최대 근력(Epley)</span></a>
-    <a class="tool" href="/fit-tools/#bodyfat"><b>체지방률</b><span>미해군 둘레법</span></a>
-    <a class="tool" href="/fit-tools/#bmi"><b>BMI·표준체중</b><span>아시아 기준</span></a>
-    <a class="tool" href="/fit-tools/#water"><b>물 섭취량</b><span>체중 기반</span></a>
-    <a class="tool" href="/fit-tools/#mets"><b>운동 칼로리</b><span>MET 기반 소모량</span></a>
+    <a class="tool" href="/fit-tools/#tdee"><b>TDEE</b><span>하루 총 소비 칼로리</span></a>
+    <a class="tool" href="/fit-tools/#protein"><b>단백질 권장량</b><span>체중·활동 목표별 g/kg</span></a>
+    <a class="tool" href="/fit-tools/#orm"><b>1RM</b><span>최대 근력(에플리 공식)</span></a>
+    <a class="tool" href="/fit-tools/#bodyfat"><b>체지방률</b><span>미해군 둘레 측정법</span></a>
+    <a class="tool" href="/fit-tools/#ideal"><b>BMI·표준체중</b><span>아시아 기준 적용</span></a>
+    <a class="tool" href="/fit-tools/#water"><b>물 섭취량</b><span>체중 기반 하루 권장량</span></a>
+    <a class="tool" href="/fit-tools/#burn"><b>운동 칼로리</b><span>MET 기반 소모량</span></a>
   </div>
 
-  <h2>이 사이트는 무엇인가요?</h2>
-  <p>xoxhee 도구함은 일상에서 자주 찾게 되는 계산을 한곳에 모은 무료 웹 도구 모음입니다.
-  복잡한 앱 설치나 회원가입 없이, 모바일 브라우저에서 바로 입력하고 결과를 확인할 수 있도록 만들었습니다.
-  나이·연봉·대출 같은 생활 계산부터, 운동과 다이어트에 필요한 칼로리·단백질·체지방 계산까지
-  자주 쓰는 12가지를 단일 페이지로 가볍게 제공합니다.</p>
+  <h2>금융 생활 가이드</h2>
+  <p>계산기가 내놓은 숫자가 어떤 기준에서 나왔는지, 그리고 실제 상황에서 무엇을 더 따져야 하는지를
+  정리한 글입니다. 각 글은 해당 계산기로 바로 연결됩니다.</p>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/yeonbong-silsuryeong-gyesan.html">연봉 실수령액 계산법 — 4대보험·세금 공제 총정리</a></h3>
+    <p>연봉에서 국민연금·건강보험·장기요양·고용보험과 근로소득세가 각각 얼마나 빠지는지, 그 공제 구조를 예시로 풀었습니다.</p>
+  </article>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/jeonse-daechul-hando.html">전세자금대출 한도, 얼마까지 나올까? — 일반 vs 버팀목</a></h3>
+    <p>시중은행 일반 대출과 정부기금 버팀목의 한도 차이, 보증금 대비 비율, 지역별 상한과 자격 요건을 비교했습니다.</p>
+  </article>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/freelancer-jongso-tax.html">유튜버·프리랜서 종합소득세 — 3.3% 떼면 끝이 아니다</a></h3>
+    <p>3.3%를 원천징수당한 프리랜서가 5월에 환급을 받는지 추가로 내는지, 그 기준이 어디서 갈리는지 정리했습니다.</p>
+  </article>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/toejikgeum-gyesan.html">퇴직금 계산법 — 조건·공식·예시 총정리</a></h3>
+    <p>1일 평균임금 × 30일 × (재직일수÷365) 공식과 지급 조건(1년 이상·주 15시간), 퇴직소득세까지 다룹니다.</p>
+  </article>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/daechul-gaaltagi-ija-jeolyak.html">대출 갈아타기(대환대출)로 이자 덜 내는 법</a></h3>
+    <p>갈아타기가 실제로 이득인 조건은 무엇인지, 중도상환수수료를 포함해 손익을 따지는 기준을 계산 예시로 설명합니다.</p>
+  </article>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/jungdo-sanghwan-susuryo.html">중도상환수수료 뜻과 면제 조건</a></h3>
+    <p>중도상환수수료가 어떤 기준으로 붙고 언제 면제되는지 — 대출을 갈아타기 전에 확인해야 할 항목입니다.</p>
+  </article>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/yejeokgeum-ija-gyesan.html">예금·적금 이자 계산법 — 세후 실수령과 '적금 함정'</a></h3>
+    <p>이자소득세 15.4%를 뺀 실수령 이자, 그리고 같은 금리인데 적금 이자가 예금의 절반쯤 되는 이유를 설명합니다.</p>
+  </article>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/yeonmaljeongsan-hwangeup.html">연말정산 환급 많이 받는 법 — 놓치기 쉬운 공제</a></h3>
+    <p>연금저축·IRP, 카드 사용, 월세, 의료비, 기부금, 부양가족 등 빠뜨리기 쉬운 공제 항목을 점검합니다.</p>
+  </article>
+
+  <article class="post">
+    <h3><a href="/fit-tools/blog/apartment-jeonyong-gonggeup-pyeongsu.html">아파트 전용면적 vs 공급면적 차이와 평수 환산법</a></h3>
+    <p>전용·공급·계약면적이 각각 무엇을 포함하는지 구분하고, ㎡를 평으로 바꾸는 계산을 예시로 보여줍니다.</p>
+  </article>
+
+  <p class="note" style="margin-top:16px"><a href="/fit-tools/blog/" style="color:var(--accent)">→ 글 전체 목록 보기</a></p>
 
   <h2>자주 묻는 질문</h2>
   <dl class="faq">
     <dt>모두 무료인가요?</dt>
-    <dd>네. 모든 계산기는 로그인이나 결제 없이 100% 무료로 사용할 수 있습니다.</dd>
-    <dt>연봉 실수령액은 어떻게 계산되나요?</dt>
-    <dd>국민연금·건강보험·장기요양·고용보험 4대보험과 근로소득세(간이세액)를 공제한 실수령액을 추정합니다. 부양가족·비과세 항목에 따라 실제와 차이가 날 수 있습니다.</dd>
+    <dd>네. 모든 계산기와 글은 로그인이나 결제 없이 사용할 수 있습니다.</dd>
+
+    <dt>계산 결과를 그대로 믿어도 되나요?</dt>
+    <dd>아닙니다. 모든 계산기는 <strong>일반적인 기준을 적용한 추정치</strong>입니다.
+    연봉 실수령액은 부양가족 수와 비과세 항목에 따라, 전세대출 한도는 은행 심사와 개인 신용에 따라
+    실제 금액이 달라집니다. 각 계산기 아래에 어떤 가정을 적용했는지 표시해 두었으니
+    실제 계약이나 신고 전에는 해당 기관의 확정 금액을 확인하세요.</dd>
+
+    <dt>왜 계산 공식까지 보여주나요?</dt>
+    <dd>같은 항목이라도 어떤 기준을 적용했느냐에 따라 결과가 달라지기 때문입니다.
+    숫자만 보면 왜 그 값이 나왔는지 확인할 수 없고, 자기 상황과 다른 가정이 섞여 있어도 알 수 없습니다.</dd>
+
     <dt>모바일에서도 되나요?</dt>
-    <dd>네. 모바일 우선으로 설계되어 휴대폰에서 가장 편하게 쓸 수 있습니다.</dd>
+    <dd>네. 모바일 우선으로 설계되어 있고 별도 앱 설치가 필요 없습니다.</dd>
+
+    <dt>개인정보를 수집하나요?</dt>
+    <dd>계산은 전부 브라우저 안에서 처리되며 입력값은 서버로 전송되지 않습니다.
+    자세한 내용은 <a href="/fit-tools/privacy.html">개인정보처리방침</a>을 참고하세요.</dd>
   </dl>
 
   <footer>
     <p>이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.</p>
-    <p>© xoxhee 도구함 · 문의는 GitHub <a href="https://github.com/xoxhee-0" style="color:var(--accent)">@xoxhee-0</a></p>
-        <p><a href="/fit-tools/privacy.html" style="color:var(--accent)">개인정보처리방침</a></p>
+    <p><a href="/fit-tools/">계산기</a> · <a href="/fit-tools/blog/">금융 생활 가이드</a> · <a href="/fit-tools/privacy.html">개인정보처리방침</a></p>
+    <p>© xoxhee 도구함 · 문의 <a href="https://github.com/xoxhee-0">@xoxhee-0</a></p>
   </footer>
 </div>
 </body>
